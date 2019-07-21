@@ -1,33 +1,45 @@
 .header {
-    margin-top: 2rem;
+    margin-top: $size-x-small-1;
 
     &-box {
-        margin-bottom: 2rem;
-        
-        display: flex;
-        align-items: center;
-        flex-wrap: nowrap;
-        justify-content: center;
+        margin: 0 auto $size-x-small-1 auto;
+        text-align: $text-center;
+
+        // Switch to flex starting a tablet-portrait size
+        @include respond(tab-port) {
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            justify-content: center;
+        }
     }
 
     &-icon {
         fill: $color-tertiary;
-        height: 4.5rem;
-        margin-right: 1.25rem;
-        width: 4.5rem;
+        height: $size-x-large-1;
+        margin-right: $size-tiny-2;
+        width: $size-x-large-1;
     }
 
     &-heading {
-        font-size: 4rem;
-        font-weight: 600;
+        font-size: $size-small-3;
+        font-weight: $font-weight-semi-bold;
+
+        @include respond(tab-port) {
+            font-size: $size-large-1; 
+        }
     }
 
     &-text {
-        font-size: 1.75rem;
-        font-weight: 300;
+        font-size: $size-tiny-3;
+        font-weight: $font-weight-light;
         margin: $margin-center;
-        text-align: center;
-        width: 100%;
+        text-align: $text-center;
+        width: $wrapper-large;
+
+        @include respond(tab-port) {
+            font-size: $size-x-small-1; 
+        }
     }
 
 }
