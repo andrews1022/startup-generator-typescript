@@ -118,7 +118,7 @@ const optionArray = [
     'people who like dad jokes too much',
     'metalheads',
     'K-pop fans',
-    'people are high, like, all the time',
+    'people who are high, like, all the time',
     'cosplayers',
     'front end developers',
     'back end developers',
