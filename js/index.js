@@ -107,7 +107,7 @@ const optionArray = [
     'bad drivers',
     'the deadweights of society',
     'drug dealers',
-    'pharmacist',
+    'pharmacists',
     'pissing off your annoying neighbour',
     'hikers',
     'people who just do not give a single fuck',
