@@ -1,0 +1,33 @@
+.header {
+    margin-top: 2rem;
+
+    &-box {
+        margin-bottom: 2rem;
+        
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    &-icon {
+        fill: $color-tertiary;
+        height: 4.5rem;
+        margin-right: 1.25rem;
+        width: 4.5rem;
+    }
+
+    &-heading {
+        font-size: 4rem;
+        font-weight: 600;
+    }
+
+    &-text {
+        font-size: 1.75rem;
+        font-weight: 300;
+        margin: $margin-center;
+        text-align: center;
+        width: 100%;
+    }
+
+}

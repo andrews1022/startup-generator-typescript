@@ -1,0 +1,28 @@
+.footer {
+    
+    &-text {
+        color: $color-secondary;
+        margin: 0 auto;
+        text-align: center;
+        transition: $standard-transition;
+    }
+
+    &-text:hover {
+        color: #fff;
+    }
+
+    &-icon:link,
+    &-icon:visited {
+        color: $color-secondary;
+        font-size: 1.75rem;
+        margin-left: .5rem;
+        text-decoration: none;
+        transition: $standard-transition;
+    }
+
+    &-icon:hover,
+    &-icon:active,
+    &-icon:focus {
+        color: #fff;
+    }
+}
