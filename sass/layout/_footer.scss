@@ -2,18 +2,18 @@
     padding: $size-small-1 0;
 
     &-text {
-        color: $color-secondary;
+        color: transparentize($color-white, .4);
         margin: $margin-center;
         text-align: $text-center;
     }
 
     &-icon:link,
     &-icon:visited {
-        color: $color-secondary;
+        color: transparentize($color-white, .4);
         font-size: $size-tiny-4;
         margin-left: .5rem;
         text-decoration: $text-no-decoration;
-        transition: $standard-transition;
+        transition: color 300ms;
     }
 
     &-icon:hover,
