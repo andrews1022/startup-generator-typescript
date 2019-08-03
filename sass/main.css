@@ -27,14 +27,14 @@ For example, for tab-port, 768px / 16px = 48em
 *::before,
 *::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
+          box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
 
 html {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 62.5%;
   /* Equivalent to 10px */
 }
@@ -79,7 +79,7 @@ body {
   font-weight: 400;
   line-height: 1.45;
   background-color: #8AC6D1;
-  color: #FAE3D9;
+  color: #fff;
   font-family: "Roboto", sans-serif;
 }
 
@@ -134,8 +134,7 @@ a:visited {
   text-decoration: none;
 }
 
-ul,
-ol {
+ul, ol {
   list-style: none;
 }
 
@@ -144,24 +143,21 @@ ol {
 }
 
 .footer-text {
-  color: #BBDED6;
+  color: rgba(255, 255, 255, 0.6);
   margin: 0 auto;
   text-align: center;
 }
 
-.footer-icon:link,
-.footer-icon:visited {
-  color: #BBDED6;
+.footer-icon:link, .footer-icon:visited {
+  color: rgba(255, 255, 255, 0.6);
   font-size: 1.75rem;
   margin-left: .5rem;
   text-decoration: none;
-  -webkit-transition: all 250ms;
-  transition: all 250ms;
+  -webkit-transition: color 300ms;
+  transition: color 300ms;
 }
 
-.footer-icon:hover,
-.footer-icon:active,
-.footer-icon:focus {
+.footer-icon:hover, .footer-icon:active, .footer-icon:focus {
   color: #fff;
 }
 
@@ -169,7 +165,7 @@ ol {
   background-color: #a1d2c6;
   border-radius: 5px;
   -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
   margin: 3rem auto 5rem auto;
   padding: 2.25rem 7rem;
   text-align: center;
@@ -183,8 +179,7 @@ ol {
   }
 }
 
-.generate-quote,
-.generate-output {
+.generate-quote, .generate-output {
   font-size: 2rem;
   margin: 0 auto 3rem auto;
 }
@@ -195,7 +190,7 @@ ol {
   border: none;
   border-radius: 50px;
   -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   color: #fff;
   cursor: pointer;
   font-size: 1.5rem;
@@ -209,8 +204,8 @@ ol {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
 }
 
 @media only screen and (min-width: 48em) {
@@ -226,19 +221,18 @@ ol {
   }
 }
 
-.generate-btn:hover,
-.generate-btn:focus {
+.generate-btn:hover, .generate-btn:focus {
   background: -webkit-gradient(linear, left top, right bottom, from(#FAE3D9), to(#FFB6B9));
   background: linear-gradient(to right bottom, #FAE3D9, #FFB6B9);
   -webkit-filter: saturate(2);
-  filter: saturate(2);
+          filter: saturate(2);
   -webkit-transform: translateY(-5px);
-  transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .generate-btn:active {
   -webkit-transform: translateY(-3px);
-  transform: translateY(-3px);
+          transform: translateY(-3px);
 }
 
 .generate-icon {
@@ -270,18 +264,18 @@ ol {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
+        flex-wrap: nowrap;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
 .header-icon {
-  fill: #FAE3D9;
+  fill: #fff;
   height: 5rem;
   margin-right: 1.25rem;
   width: 5rem;
@@ -311,5 +305,3 @@ ol {
     font-size: 2rem;
   }
 }
-
-/*# sourceMappingURL=main.css.map */
