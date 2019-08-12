@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .footer {
     padding: $size-small-1 0;
 
@@ -21,4 +22,29 @@
     &-icon:focus {
         color: $color-white;
     }
+=======
+.footer {
+    padding: $size-small-1 0;
+
+    &-text {
+        color: transparentize($color-white, .4);
+        margin: $margin-center;
+        text-align: $text-center;
+    }
+
+    &-icon:link,
+    &-icon:visited {
+        color: transparentize($color-white, .4);
+        font-size: $size-tiny-4;
+        margin-left: .5rem;
+        text-decoration: $text-no-decoration;
+        transition: color 300ms;
+    }
+
+    &-icon:hover,
+    &-icon:active,
+    &-icon:focus {
+        color: $color-white;
+    }
+>>>>>>> e80a933a42781404a3c1dfd09889d9875c0ecad6
 }
