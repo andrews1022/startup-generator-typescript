@@ -1,9 +1,4 @@
-// Generate Button
-const btn = document.querySelector('#generate-btn');
-
-// Array with all of the startup/tech companies
-const startupArray = [
-    'After Effects',
+var companiesArray = [
     'Airbnb',
     'Amazon',
     'Audible',
@@ -71,11 +66,9 @@ const startupArray = [
     'Vimeo',
     'WhatsApp',
     'Wikipedia',
-    'YouTube'
+    'YouTube',
 ];
-
-// Array with all of the possible options/'but it's for...'
-const optionArray = [
+var optionsArray = [
     '10x engineers',
     'accountants',
     'actors and actresses',
@@ -143,7 +136,7 @@ const optionArray = [
     'gamers',
     'gardeners',
     'geologists',
-    'Grammar Nazi\'s',
+    "Grammar Nazi's",
     'grandparents',
     'guitarists',
     'gymnasts',
@@ -246,7 +239,7 @@ const optionArray = [
     'things that are definitely illegal',
     'those dipshits who think ghosts and spirits are real',
     'those mutherfuckering MLM scamming pieces of shit',
-    'those poor bastards that\'ve been friendzoned for eternity',
+    "those poor bastards that've been friendzoned for eternity",
     'those unfortunate souls sent to the shadow realm',
     'trailer trash',
     'trains',
@@ -261,17 +254,17 @@ const optionArray = [
     'YouTubers experiencing burnout',
     'YouTubers',
     'Yu-Gi-Oh! players',
-    'zombies'
+    'zombies',
 ];
-
-// Generate 
-btn.addEventListener('click', () => {
-    // Generate random startup/tech company value
-    const randomComp = startupArray[Math.floor(Math.random() * startupArray.length)];
-
-    // Generate random options/'but it's for...' value
-    const randomOption = optionArray[Math.floor(Math.random() * optionArray.length)];
-
-    // Inject a response into the empty paragraph
-    document.querySelector('#generated-text').textContent = `"Well, it's like ${randomComp}, but for ${randomOption}."`;
-});
+// Grab UI Elements
+var generateMessageButton = document.querySelector('#generate-btn');
+var generatedTextElement = document.querySelector('#generated-text');
+// Function to generate message
+var generateMessage = function () {
+    var randomCompany = companiesArray[Math.floor(Math.random() * companiesArray.length)];
+    var randomOption = optionsArray[Math.floor(Math.random() * optionsArray.length)];
+    var message = "\"Well, it's like " + randomCompany + ", but for " + randomOption + ".\"";
+    generatedTextElement.textContent = message;
+};
+// Generate
+generateMessageButton.addEventListener('click', generateMessage);

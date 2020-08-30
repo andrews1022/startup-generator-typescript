@@ -1,4 +1,3 @@
 # Startup Generator
-This is just a simple project/resource you can use to create a randomly generated startup idea. Feel free to [Tweet](https://twitter.com/andrew_devsrc) me your projects once their all done, or any crazy combinations you get!
 
-With this project I also learned how to setup ESLint and Prettier.
+Yet again I've converted my first JavaScript project into another language! This time using TypeScript. Just exploring some basic features, while searching for any missing pieces/gaps in knowledge.
