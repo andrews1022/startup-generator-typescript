@@ -264,7 +264,10 @@ var generateMessage = function () {
     var randomCompany = companiesArray[Math.floor(Math.random() * companiesArray.length)];
     var randomOption = optionsArray[Math.floor(Math.random() * optionsArray.length)];
     var message = "\"Well, it's like " + randomCompany + ", but for " + randomOption + ".\"";
-    generatedTextElement.textContent = message;
+    return message;
+};
+var setParagraphText = function () {
+    generatedTextElement.textContent = generateMessage();
 };
 // Generate
-generateMessageButton.addEventListener('click', generateMessage);
+generateMessageButton.addEventListener('click', setParagraphText);

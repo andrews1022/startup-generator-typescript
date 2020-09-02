@@ -263,12 +263,16 @@ const generateMessageButton: HTMLButtonElement = document.querySelector('#genera
 const generatedTextElement: HTMLParagraphElement = document.querySelector('#generated-text');
 
 // Function to generate message
-const generateMessage = (): void => {
+const generateMessage = (): string => {
   const randomCompany: string = companiesArray[Math.floor(Math.random() * companiesArray.length)];
   const randomOption: string = optionsArray[Math.floor(Math.random() * optionsArray.length)];
   const message: string = `"Well, it's like ${randomCompany}, but for ${randomOption}."`;
-  generatedTextElement.textContent = message;
+  return message;
+};
+
+const setParagraphText = (): void => {
+  generatedTextElement.textContent = generateMessage();
 };
 
 // Generate
-generateMessageButton.addEventListener('click', generateMessage);
+generateMessageButton.addEventListener('click', setParagraphText);
